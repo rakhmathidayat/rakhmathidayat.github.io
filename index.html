@@ -2,8 +2,15 @@
 <html>
 <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
 <script src="https://raw.githack.com/jeromeetienne/AR.js/1.7.5/aframe/build/aframe-ar.js"></script>
+
   <body style='margin : 0px; overflow: hidden;'>
+    
     <a-scene embedded arjs>
+      
+
+     <!--  <a-text value="Hello, World! :D"
+        event-set__click="_target: #ganti; visible: true;"
+      ></a-text> -->
      <!-- <a-marker preset="custom" type="pattern" url="assets/pattern-Hiro_marker_ARjs.patt"> -->
        <!--   <a-cylinder position='0 0.5 0' material='color: yellow;'></a-cylinder> -->
     <!--  <a-asset-item id="objfish" src="assets/fish/fish.obj"></a-asset-item>
@@ -24,15 +31,60 @@
       <!--  <a-asset-item id="mtlfish" src="assets/fish/fish.mtl"></a-asset-item> -->
      <!-- </a-marker>
        <a-entity camera></a-entity> -->
-     <!-- <a-image src="tes.png"></a-image>
-      <a-marker-camera preset='hiro'> </a-marker-camera>
-      -->
+       
+    <!-- <a-entity id="ganti" template="src: hal2.html"
+                position="0 0 0">
+      </a-entity><a-image  src="assets/tes.png"
+        scale="3 3 3"
+        position='0 0.5 0'
+        rotation="-90 0 0"
+
+        event-set__click="_target: #ganti; visible: true;"
+        >  
+      </a-image>-->
+      <a-marker preset="custom" type="pattern" url="assets/pattern-markerA.patt">
+      </a-entity><a-video  src="assets/tes.png"
+        scale="3 3 3"
+        position='0 0.5 0'
+        rotation="-90 0 0"
+        >
+      </a-marker>
+      <a-marker preset="custom" type="pattern" url="assets/pattern-Hiro_marker_ARjs.patt">
+      </a-entity><a-video  src="assets/tes (1).mp4"
+        scale="3 3 3"
+        position='0 0.5 0'
+        rotation="-90 0 0"
+        >
+      </a-marker>
+      <a-marker preset="custom" type="pattern" url="assets/pattern-markerB.patt">
+      </a-entity><a-video  src="assets/tes (2).mp4"
+        scale="3 3 3"
+        position='0 0.5 0'
+        rotation="-90 0 0"
+        >
+      </a-marker>
+      <a-marker preset="custom" type="pattern" url="assets/pattern-markerC.patt">
+      </a-entity><a-video  src="assets/tes (3).mp4"
+        scale="3 3 3"
+        position='0 0.5 0'
+        rotation="-90 0 0"
+        >
+      </a-marker>
+      <a-marker preset="custom" type="pattern" url="assets/pattern-markerD.patt">
+      </a-entity><a-video  src="assets/tes (4).mp4"
+        scale="3 3 3"
+        position='0 0.5 0'
+        rotation="-90 0 0"
+        >
+      </a-marker>
+      <a-marker preset="custom" type="pattern" url="assets/pattern-markerE.patt">
       </a-entity><a-video  src="assets/tes (5).mp4"
         scale="3 3 3"
         position='0 0.5 0'
         rotation="-90 0 0"
         >
-      <a-marker-camera preset='hiro'> </a-marker-camera> 
+      </a-marker>
+    <a-entity camera></a-entity>
     </a-scene>
   </body>
 </html>
